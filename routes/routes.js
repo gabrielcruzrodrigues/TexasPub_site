@@ -19,6 +19,10 @@ router.get('/hamburgers', async (req, res) => {
 
 router.get('/sushi', async (req, res) => {
     res.render('sushi');
+});
+
+router.get('/buscar', async (req, res) => {
+    res.render('buscar');
 })
 
 
