@@ -18,6 +18,8 @@ const routes = require('./routes/routes');
 //midlewares para usar as rotas vindas do routes
 app.use('/', routes);
 
-app.listen(3000, () => {
-    console.log('O servidor já esta rodando na porta: 3000');
+const ip = '192.168.4.100';
+
+app.listen(3000, ip, () => {
+    console.log(`O servidor já esta rodando em http://${ip}:3000`);
 });
